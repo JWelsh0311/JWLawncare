@@ -71,7 +71,7 @@ body {
     margin: 0 auto 20px auto;
     max-width: 100%;
     height: auto;
-    /* No padding-top here — JS will set it */
+    /* No padding-top here — JS will set it if needed */
 }
 
 .image-row {
@@ -112,17 +112,17 @@ body > *:last-child {
         gap: 5px;
     }
 
-    /* Remove body padding so image can be full width */
+    /* Remove body padding so logo can be full width */
     body {
         padding: 0;
     }
 
-    /* ✅ Make logo full width on phones */
+    /* ✅ Make logo full width without horizontal scroll */
     .hero-image {
-        width: 100vw;       /* full viewport width */
-        max-width: 100vw;
+        width: 100%;       /* fills container, now container = viewport */
+        max-width: 100%;
         height: auto;
-        margin: 0 0 20px 0; /* no side margins */
+        margin: 0 0 20px 0;
         display: block;
     }
 }
