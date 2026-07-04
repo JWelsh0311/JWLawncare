@@ -122,9 +122,9 @@ margin: 25px auto;
     }
 
     .navbar {
-        height: auto;
+        height: auto; /* Let it grow naturally if it wraps */
         padding: 5px;
-        flex-wrap: wrap; /* allow navbar items to wrap */
+        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -136,8 +136,14 @@ margin: 25px auto;
         font-size: 20px;
     }
 
+    /* Reduce space between navbar and content */
     .hero-image {
-        margin-top: 50px;
+        margin-top: 10px; /* much smaller gap */
+    }
+
+    /* If you have text or other content right after navbar */
+    .content {
+        padding-top: 10px; /* small gap for breathing room */
     }
 
     .image-row {
