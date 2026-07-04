@@ -3,13 +3,12 @@ body {
     background: #676767;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    margin: 25px auto 0 auto; /* no bottom margin */
+    margin: 25px auto 0 auto;
     padding: 0 15px;
     max-width: 1200px;
     box-sizing: border-box;
 }
 
-/* ===== Navbar ===== */
 .navbar {
     background-color: #000;
     padding: 0px 10px;
@@ -33,7 +32,6 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
-    gap: 0px;
 }
 
 .navbar li {
@@ -68,16 +66,14 @@ body {
     border-radius: 20px;
 }
 
-/* ===== Hero Image ===== */
 .hero-image {
     display: block;
     margin: 0 auto 20px auto;
     max-width: 100%;
     height: auto;
-    padding-top: 60px; /* default for desktop navbar height */
+    /* No padding-top here — JS will set it */
 }
 
-/* ===== Image Row ===== */
 .image-row {
     display: flex;
     flex-wrap: wrap;
@@ -85,15 +81,12 @@ body {
     justify-content: center;
 }
 
-/* ===== Remove extra bottom space ===== */
 body > *:last-child {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
 
-/* ===== Responsive Adjustments ===== */
-
-/* Tablets */
+/* Responsive tweaks */
 @media (max-width: 768px) {
     .navbar li {
         font-size: 22px;
@@ -101,15 +94,11 @@ body > *:last-child {
     .navbar .pipe {
         font-size: 26px;
     }
-    .hero-image {
-        padding-top: 80px; /* taller navbar on tablets */
-    }
 }
 
-/* Phones */
 @media (max-width: 480px) {
     .navbar {
-        flex-wrap: wrap; /* allow wrapping */
+        flex-wrap: wrap;
         justify-content: center;
         padding: 5px;
     }
@@ -118,9 +107,6 @@ body > *:last-child {
     }
     .navbar .pipe {
         font-size: 20px;
-    }
-    .hero-image {
-        padding-top: 100px; /* tallest navbar on phones portrait */
     }
     .image-row {
         gap: 5px;
