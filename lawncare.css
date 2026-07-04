@@ -10,7 +10,7 @@ body {
 }
 
 .navbar {
-    background-color: #000;
+    background-color: brown;
     padding: 0px 10px;
     position: fixed;
     top: 0;
@@ -53,12 +53,6 @@ body {
     user-select: none;
 }
 
-.navbar li.pipe {
-    color: black;
-    font-size: 35px;
-    user-select: none;
-}
-
 .navbar a.active,
 .navbar a:hover {
     background-color: white;
@@ -73,11 +67,39 @@ body {
     height: auto;
 }
 
+.about-content {
+    margin-top: 80px;
+	text-align: center;
+    padding: 20px;
+}
+
 .image-row {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
     justify-content: center;
+    gap: 20px;
+}
+
+.image-row img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Desktop: disable clicking */
+.phone-link {
+    pointer-events: none;
+    cursor: default;
+}
+
+/* Mobile: enable clicking */
+@media (max-width: 768px) {
+    .phone-link {
+        pointer-events: auto;
+        cursor: pointer;
+    }
 }
 
 body > *:last-child {
@@ -110,6 +132,10 @@ body > *:last-child {
     .image-row {
         gap: 5px;
     }
+	
+	.image-row img {
+    width: 100%;
+}
 
     /* Remove body side padding so logo can be full width */
     body {
