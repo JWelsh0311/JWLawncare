@@ -111,9 +111,12 @@ body > *:last-child {
     .image-row {
         gap: 5px;
     }
-	.hero-image {
-        width: 100%;   /* fills the screen width */
-        height: auto;  /* keeps aspect ratio */
+    /* ✅ Make logo full width on phones */
+    .hero-image {
+        width: 100vw;       /* full viewport width */
+        max-width: 100vw;   /* prevent shrinking */
+        height: auto;
         margin: 0 0 20px 0; /* remove side auto margins */
+        display: block;
     }
 }
