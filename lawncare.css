@@ -3,8 +3,8 @@ body {
     background: #676767;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    margin: 25px auto 0 auto;
-    padding: 0 15px;
+    margin: 0 auto; /* removed top margin so navbar padding takes over */
+    padding: 60px 15px 0 15px; /* top padding = navbar height */
     max-width: 1200px;
     box-sizing: border-box;
 }
@@ -111,14 +111,12 @@ body > *:last-child {
         gap: 5px;
     }
 
-    /* Remove body padding & margin so logo can be full width */
+    /* Remove body side padding so logo can be full width */
     body {
-        padding: 0;
-        margin: 0;
+        padding: 80px 0 0 0; /* top padding = taller mobile navbar height */
         max-width: 100%;
     }
 
-    /* Full width logo — top margin will be set dynamically by JS */
     .hero-image {
         width: 100%;
         max-width: 100%;
@@ -127,3 +125,4 @@ body > *:last-child {
         display: block;
     }
 }
+
