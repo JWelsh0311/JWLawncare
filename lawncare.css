@@ -3,8 +3,8 @@ body {
     background: #676767;
     color: #fff;
     font-family: 'Oswald', sans-serif;
-    margin: 0 auto; /* removed top margin so navbar padding takes over */
-    padding: 60px 15px 0 15px; /* top padding = navbar height */
+    margin: 0 auto;
+    padding: 45px 15px 0 15px; /* smaller top padding */
     max-width: 1200px;
     box-sizing: border-box;
 }
@@ -107,7 +107,7 @@ body > *:last-child {
     padding-bottom: 0 !important;
 }
 
-/* Responsive tweaks */
+/* Responsiveness */
 @media (max-width: 768px) {
     .navbar li {
         font-size: 22px;
@@ -141,7 +141,7 @@ body > *:last-child {
 
     /* Remove body side padding so logo can be full width */
     body {
-        padding: 80px 0 0 0; /* top padding = taller mobile navbar height */
+         padding: 55px 0 0 0; /* match real navbar height */
         max-width: 100%;
     }
 
