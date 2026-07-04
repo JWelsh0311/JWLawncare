@@ -111,4 +111,9 @@ body > *:last-child {
     .image-row {
         gap: 5px;
     }
+	.hero-image {
+        width: 100%;   /* fills the screen width */
+        height: auto;  /* keeps aspect ratio */
+        margin: 0 0 20px 0; /* remove side auto margins */
+    }
 }
