@@ -112,14 +112,16 @@ body > *:last-child {
         gap: 5px;
     }
 
-    /* Remove body padding so logo can be full width */
+    /* Remove body padding & margin so logo can be full width */
     body {
         padding: 0;
+        margin: 0;
+        max-width: 100%; /* remove 1200px limit */
     }
 
     /* ✅ Make logo full width without horizontal scroll */
     .hero-image {
-        width: 100%;       /* fills container, now container = viewport */
+        width: 100%;
         max-width: 100%;
         height: auto;
         margin: 0 0 20px 0;
