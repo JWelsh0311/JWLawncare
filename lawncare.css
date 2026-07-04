@@ -68,9 +68,9 @@ body {
 }
 
 .about-content {
-    margin-top: 80px;
-	text-align: center;
-    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    padding: 10px 20px;
 }
 
 .image-row {
@@ -134,7 +134,9 @@ body > *:last-child {
     }
 	
 	.image-row img {
-    width: 100%;
+        width: 160px;
+        max-width: 45%;
+        height: auto;
 }
 
     /* Remove body side padding so logo can be full width */
