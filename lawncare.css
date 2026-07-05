@@ -151,7 +151,7 @@ body > *:last-child {
 
     /* Remove body side padding so logo can be full width */
     body {
-         padding: 55px 0 0 0; /* match real navbar height */
+        padding: 45px 0 0 0; /* match real navbar height */
         max-width: 100%;
     }
 
