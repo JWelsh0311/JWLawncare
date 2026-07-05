@@ -4,7 +4,7 @@ body {
     color: #fff;
     font-family: 'Oswald', sans-serif;
     margin: 0 auto;
-    padding: 45px 15px 0 15px; /* smaller top padding */
+    padding: 40px 15px 0 15px; /* smaller top padding */
     max-width: 1200px;
     box-sizing: border-box;
 }
