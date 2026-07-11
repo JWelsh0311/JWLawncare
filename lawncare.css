@@ -116,6 +116,11 @@ main {
 	padding:8px 0;
 }
 
+.copyright a {
+    color: white;
+    text-decoration: underline;
+}
+
 /* Mobile: enable clicking */
 @media (max-width: 768px) {
     .phone-link {
