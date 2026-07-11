@@ -104,6 +104,18 @@ body {
     margin-top: auto;
 }
 
+main {
+    flex: 1;
+}
+
+.copyright {
+	color: white;
+	text-align: center;
+	font-family: Arial, sans-serif;
+	font-size:14px;
+	padding:8px 0;
+}
+
 /* Mobile: enable clicking */
 @media (max-width: 768px) {
     .phone-link {
